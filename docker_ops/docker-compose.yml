@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+
+  # db:
+  #   build: db
+  #   network_mode: host
+  #   volumes: 
+  #     - mysql-data:/var/lib/mysql:rw
+  #     # - /var/log:/var/log:rw
+
+  # httpd:
+  #   build: httpd
+  #   network_mode: host
+  #   # volumes:
+  #     # - /home/proj/static:/usr/local/apache2/static:ro
+
+  django:
+    build: django
+    # volumes:
+    #   - /home/proj:/code:ro
+    #   - /var/log:/var/log:rw
+    #   - /home/media:/data/media:rw
+    # depends_on:
+    #   - db
+    #   - httpd
+    network_mode: host
+    environment:
+      - PROJ_ENV=PRODUCT
+
+  scheduler:
+    buiild: django
+    network_mode: host
+
+# volumes:
+#   mysql-data:
