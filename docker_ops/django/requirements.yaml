@@ -1,0 +1,16 @@
+name: server                                                                                                                   
+channels:                                                                                                                       
+  - defaults                                                                                                                    
+dependencies:   
+  - python=3.9 
+  - django=4.0.2   
+  - pip                                                                                                            
+  - apscheduler                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  - pymysql                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  - pip:                                                                                                        
+    - django-apscheduler                                                                                             
+    - django-extensions                                                                                          
+    - django-mysql                                                                               
+    - matplotlib                                                                                            
+    - numpy                                                                                                       
+    - pandas                                                                                                    
